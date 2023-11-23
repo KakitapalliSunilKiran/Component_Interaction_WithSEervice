@@ -1,0 +1,13 @@
+<p>all-user works!</p>
+
+<div class="container">
+    <div class="user-container" *ngFor="let user of users">
+         <div class="user-name">
+             {{user.name}}
+         </div>
+         <div class="user-job">
+            {{user.age}}
+         </div>
+         <button (click)="onSubmit(user)">Details</button>
+    </div>
+ </div>
